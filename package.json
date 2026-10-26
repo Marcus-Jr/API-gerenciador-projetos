@@ -1,5 +1,5 @@
 {
-  "name": "backend-konvexjr",
+  "name": "API-gerenciador-projetos",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,16 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Marcus-Jr/backend-konvexjr.git"
+    "url": "git+https://github.com/Marcus-Jr/API-gerenciador-projetos.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/Marcus-Jr/backend-konvexjr/issues"
+    "url": "https://github.com/Marcus-Jr/API-gerenciador-projetos/issues"
   },
-  "homepage": "https://github.com/Marcus-Jr/backend-konvexjr#readme",
+  "homepage": "https://github.com/Marcus-Jr/API-gerenciador-projetos#readme",
   "dependencies": {
     "express": "^5.3.0",
     "node-localstorage": "^3.0.5"
