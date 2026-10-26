@@ -1,0 +1,83 @@
+{
+  "info": {
+    "name": "API Gerenciadora de Projetos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:3000" },
+    { "key": "id", "value": "1" }
+  ],
+  "item": [
+    {
+      "name": "Projetos",
+      "item": [
+        {
+          "name": "Criar projeto",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"nome\": \"Site\",\n  \"cliente\": \"ACME\",\n  \"dataInicio\": \"2026-01-10\",\n  \"dataEntrega\": \"2026-03-10\",\n  \"idEquipe\": 1\n}" },
+            "url": "{{baseUrl}}/projetos"
+          }
+        },
+        {
+          "name": "Listar projetos",
+          "request": { "method": "GET", "url": "{{baseUrl}}/projetos" }
+        },
+        {
+          "name": "Buscar projeto por id",
+          "request": { "method": "GET", "url": "{{baseUrl}}/projetos/{{id}}" }
+        },
+        {
+          "name": "Atualizar projeto",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"status\": \"em andamento\"\n}" },
+            "url": "{{baseUrl}}/projetos/{{id}}"
+          }
+        },
+        {
+          "name": "Excluir projeto",
+          "request": { "method": "DELETE", "url": "{{baseUrl}}/projetos/{{id}}" }
+        }
+      ]
+    },
+    {
+      "name": "Equipes",
+      "item": [
+        {
+          "name": "Criar equipe",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"lider\": \"Ana\",\n  \"membros\": [\"Bia\", \"Caio\"]\n}" },
+            "url": "{{baseUrl}}/equipes"
+          }
+        },
+        {
+          "name": "Listar equipes",
+          "request": { "method": "GET", "url": "{{baseUrl}}/equipes" }
+        },
+        {
+          "name": "Buscar equipe por id",
+          "request": { "method": "GET", "url": "{{baseUrl}}/equipes/{{id}}" }
+        },
+        {
+          "name": "Atualizar equipe",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"lider\": \"Carlos\"\n}" },
+            "url": "{{baseUrl}}/equipes/{{id}}"
+          }
+        },
+        {
+          "name": "Excluir equipe",
+          "request": { "method": "DELETE", "url": "{{baseUrl}}/equipes/{{id}}" }
+        }
+      ]
+    }
+  ]
+}
+
