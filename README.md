@@ -252,6 +252,3 @@ Pare o servidor e apague a pasta `data/`. Ela será recriada na próxima execuç
 ## Autor
 
 **MARCUS EVERTON DE FRANÇA JUNIOR**
-
-[![GitHub](https://img.shields.io/badge/GitHub-SEU__USUARIO-181717?logo=github)](https://github.com/SEU_USUARIO)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-SEU__PERFIL-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/SEU_PERFIL)
